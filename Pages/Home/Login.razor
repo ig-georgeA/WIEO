@@ -1,4 +1,4 @@
-@page "/login"
+@page "/"
 @inject NavigationManager NavigationManager
 
 <div class="row-layout login-container">
@@ -18,7 +18,7 @@
                 <IgbCheckbox LabelPosition="CheckboxBaseLabelPosition.After" Checked="true" Indeterminate="false" class="checkbox" login-scope>
                     Remember me
                 </IgbCheckbox>
-                <a href class="typography__body-2 hyperlink" @onclick="@(e => Navigate(""))">
+                <a href class="typography__body-2 hyperlink" @onclick="@(e => Navigate("reset-password"))">
                     Forgot password?
                 </a>
             </div>
