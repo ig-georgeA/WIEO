@@ -1,0 +1,39 @@
+@page "/create-login"
+@inject NavigationManager NavigationManager
+
+<div class="row-layout create-login-container">
+    <div class="column-layout form">
+        <div class="column-layout group">
+            <div class="column-layout group_1">
+                <h4 class="content">
+                    Create Login
+                </h4>
+                <p class="typography__body-2 content">
+                    Please, create login so user can access application features
+                </p>
+            </div>
+            <IgbInput Label="Username" Placeholder="wie.username" Outlined="true" class="input" create-login-scope></IgbInput>
+            <IgbInput Label="Display name" Placeholder="John Doe" Outlined="true" class="input" create-login-scope></IgbInput>
+            <IgbInput DisplayType="InputType.Email" Label="Email address" Placeholder="jdoe@domain.com" Outlined="true" class="input" create-login-scope></IgbInput>
+            <IgbInput DisplayType="InputType.Tel" Label="Phone number" Placeholder="(123) 456-7890" Outlined="true" class="input" create-login-scope></IgbInput>
+            <div class="row-layout group_2">
+                <IgbCheckbox LabelPosition="CheckboxBaseLabelPosition.After" class="checkbox" create-login-scope>
+                    Phone number confirmed
+                </IgbCheckbox>
+            </div>
+            <IgbInput DisplayType="InputType.Password" Label="Password" Placeholder="Min 8 characters" Outlined="true" class="input" create-login-scope></IgbInput>
+            <IgbInput DisplayType="InputType.Password" Label="Confirm Password" Placeholder="Enter password" Outlined="true" class="input" create-login-scope></IgbInput>
+            <IgbButton @onclick="@(e => Navigate("in-app-examination"))" class="button" create-login-scope>
+                Save
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+        </div>
+    </div>
+</div>
+
+@code {
+    private void Navigate(string path)
+    {
+        NavigationManager.NavigateTo(path);
+    }
+}

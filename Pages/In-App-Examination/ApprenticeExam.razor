@@ -1,0 +1,457 @@
+@page "/in-app-examination"
+@inject NavigationManager NavigationManager
+
+<div class="row-layout apprentice-exam-container">
+    <div class="column-layout form">
+        <div class="column-layout group">
+            <div class="column-layout group_1">
+                <h5 class="h5">
+                    Apprentice Examination
+                </h5>
+                <p class="typography__body-1 text">
+                    Please complete each question before submitting
+                </p>
+            </div>
+            <div class="row-layout group_2">
+                <p class="typography__body-1 text_1">
+                    1.When does voltage drop begin on a #12 wire?
+                </p>
+            </div>
+            <IgbRadioGroup Alignment="RadioGroupAlignment.Horizontal" class="radio-group" apprentice-exam-scope>
+                <IgbRadio Value="1" class="radio" apprentice-exam-scope>
+                    50 ft
+                </IgbRadio>
+                <IgbRadio Value="2" class="radio" apprentice-exam-scope>
+                    120 ft
+                </IgbRadio>
+                <IgbRadio Value="3" class="radio" apprentice-exam-scope>
+                    200 ft
+                </IgbRadio>
+                <IgbRadio Value="4" class="radio" apprentice-exam-scope>
+                    300 ft
+                </IgbRadio>
+                <IgbRadio Value="5" class="radio" apprentice-exam-scope>
+                    None are correct
+                </IgbRadio>
+            </IgbRadioGroup>
+            <div class="row-layout group_3">
+                <p class="typography__body-1 text_1">
+                    2.How many receptacles can be installed on one circuit?
+                </p>
+            </div>
+            <IgbRadioGroup Alignment="RadioGroupAlignment.Horizontal" class="radio-group" apprentice-exam-scope>
+                <IgbRadio Value="1" class="radio" apprentice-exam-scope>
+                    20
+                </IgbRadio>
+                <IgbRadio Value="2" class="radio" apprentice-exam-scope>
+                    8
+                </IgbRadio>
+                <IgbRadio Value="3" class="radio" apprentice-exam-scope>
+                    50
+                </IgbRadio>
+                <IgbRadio Value="4" class="radio" apprentice-exam-scope>
+                    14
+                </IgbRadio>
+                <IgbRadio Value="5" class="radio" apprentice-exam-scope>
+                    None are correct
+                </IgbRadio>
+            </IgbRadioGroup>
+            <div class="row-layout group_2">
+                <p class="typography__body-1 text_1">
+                    3.There are no limits on bends when bending conduit?
+                </p>
+            </div>
+            <IgbRadioGroup Alignment="RadioGroupAlignment.Horizontal" class="radio-group" apprentice-exam-scope>
+                <IgbRadio Value="1" class="radio" apprentice-exam-scope>
+                    True
+                </IgbRadio>
+                <IgbRadio Value="2" class="radio" apprentice-exam-scope>
+                    False
+                </IgbRadio>
+            </IgbRadioGroup>
+            <div class="row-layout group_2">
+                <p class="typography__body-1 text_1">
+                    4.How many degrees are allowed before a pull point is needed with EMT?
+                </p>
+            </div>
+            <IgbRadioGroup Alignment="RadioGroupAlignment.Horizontal" class="radio-group" apprentice-exam-scope>
+                <IgbRadio Value="1" class="radio" apprentice-exam-scope>
+                    360°
+                </IgbRadio>
+                <IgbRadio Value="2" class="radio" apprentice-exam-scope>
+                    180°
+                </IgbRadio>
+                <IgbRadio Value="3" class="radio" apprentice-exam-scope>
+                    90°
+                </IgbRadio>
+                <IgbRadio Value="4" class="radio" apprentice-exam-scope>
+                    30°
+                </IgbRadio>
+                <IgbRadio Value="5" class="radio" apprentice-exam-scope>
+                    None are correct
+                </IgbRadio>
+            </IgbRadioGroup>
+            <div class="row-layout group_2">
+                <p class="typography__body-1 text_1">
+                    5.What type of receptacle is needed for a wet location?
+                </p>
+            </div>
+            <IgbRadioGroup Alignment="RadioGroupAlignment.Horizontal" class="radio-group" apprentice-exam-scope>
+                <IgbRadio Value="1" class="radio" apprentice-exam-scope>
+                    15A
+                </IgbRadio>
+                <IgbRadio Value="2" class="radio" apprentice-exam-scope>
+                    20A
+                </IgbRadio>
+                <IgbRadio Value="3" class="radio" apprentice-exam-scope>
+                    GFCI
+                </IgbRadio>
+                <IgbRadio Value="4" class="radio" apprentice-exam-scope>
+                    GBTD
+                </IgbRadio>
+                <IgbRadio Value="5" class="radio" apprentice-exam-scope>
+                    All are correct
+                </IgbRadio>
+            </IgbRadioGroup>
+            <div class="row-layout group_2">
+                <p class="typography__body-1 text_1">
+                    6.What is the purpose of bonding and grounding?
+                </p>
+            </div>
+            <IgbRadioGroup class="radio-group" apprentice-exam-scope>
+                <IgbRadio Value="1" class="radio" apprentice-exam-scope>
+                    To insure all components are on a ground fault path
+                </IgbRadio>
+                <IgbRadio Value="2" class="radio" apprentice-exam-scope>
+                    To insure all components are not on a ground fault path
+                </IgbRadio>
+                <IgbRadio Value="3" class="radio" apprentice-exam-scope>
+                    Neither are correct
+                </IgbRadio>
+            </IgbRadioGroup>
+            <div class="row-layout group_2">
+                <p class="typography__body-1 text_1">
+                    7.What kind of materials can electricity not pass through?
+                </p>
+            </div>
+            <IgbRadioGroup Alignment="RadioGroupAlignment.Horizontal" class="radio-group" apprentice-exam-scope>
+                <IgbRadio Value="1" class="radio" apprentice-exam-scope>
+                    Rubber
+                </IgbRadio>
+                <IgbRadio Value="2" class="radio" apprentice-exam-scope>
+                    Glass
+                </IgbRadio>
+                <IgbRadio Value="3" class="radio" apprentice-exam-scope>
+                    Plastic
+                </IgbRadio>
+                <IgbRadio Value="4" class="radio" apprentice-exam-scope>
+                    All are correct
+                </IgbRadio>
+                <IgbRadio Value="5" class="radio" apprentice-exam-scope>
+                    None are correct
+                </IgbRadio>
+            </IgbRadioGroup>
+            <div class="row-layout group_2">
+                <p class="typography__body-1 text_1">
+                    8.What is the difference between wire and cable?
+                </p>
+            </div>
+            <IgbRadioGroup class="radio-group" apprentice-exam-scope>
+                <IgbRadio Value="1" class="radio" apprentice-exam-scope>
+                    Wire is single, cable is grouped wire
+                </IgbRadio>
+                <IgbRadio Value="2" class="radio" apprentice-exam-scope>
+                    Copper and another material
+                </IgbRadio>
+                <IgbRadio Value="3" class="radio" apprentice-exam-scope>
+                    Neither are correct
+                </IgbRadio>
+            </IgbRadioGroup>
+            <div class="row-layout group_2">
+                <p class="typography__body-1 text_1">
+                    9.Select three types of conductors?
+                </p>
+            </div>
+            <IgbCheckbox LabelPosition="CheckboxBaseLabelPosition.After" class="checkbox" apprentice-exam-scope>
+                Copper
+            </IgbCheckbox>
+            <IgbCheckbox LabelPosition="CheckboxBaseLabelPosition.After" class="checkbox" apprentice-exam-scope>
+                Gold
+            </IgbCheckbox>
+            <IgbCheckbox LabelPosition="CheckboxBaseLabelPosition.After" class="checkbox" apprentice-exam-scope>
+                Aluminum
+            </IgbCheckbox>
+            <IgbCheckbox LabelPosition="CheckboxBaseLabelPosition.After" class="checkbox" apprentice-exam-scope>
+                Silver
+            </IgbCheckbox>
+            <IgbCheckbox LabelPosition="CheckboxBaseLabelPosition.After" class="checkbox" apprentice-exam-scope>
+                Brass
+            </IgbCheckbox>
+            <IgbCheckbox LabelPosition="CheckboxBaseLabelPosition.After" class="checkbox" apprentice-exam-scope>
+                Iron
+            </IgbCheckbox>
+            <IgbCheckbox LabelPosition="CheckboxBaseLabelPosition.After" class="checkbox_1" apprentice-exam-scope>
+                Mercury
+            </IgbCheckbox>
+            <div class="row-layout group_2">
+                <p class="typography__body-1 text_1">
+                    10.What is the multiplier for 30° bend?
+                </p>
+            </div>
+            <IgbRadioGroup Alignment="RadioGroupAlignment.Horizontal" class="radio-group" apprentice-exam-scope>
+                <IgbRadio Value="1" class="radio" apprentice-exam-scope>
+                    2.2
+                </IgbRadio>
+                <IgbRadio Value="2" class="radio" apprentice-exam-scope>
+                    1.8
+                </IgbRadio>
+                <IgbRadio Value="3" class="radio" apprentice-exam-scope>
+                    3.0
+                </IgbRadio>
+                <IgbRadio Value="4" class="radio" apprentice-exam-scope>
+                    2.0
+                </IgbRadio>
+                <IgbRadio Value="5" class="radio" apprentice-exam-scope>
+                    None are correct
+                </IgbRadio>
+            </IgbRadioGroup>
+            <div class="row-layout group_2">
+                <p class="typography__body-1 text_1">
+                    11.What size wire is needed for a 30A 240V circuit?
+                </p>
+            </div>
+            <IgbRadioGroup Alignment="RadioGroupAlignment.Horizontal" class="radio-group" apprentice-exam-scope>
+                <IgbRadio Value="1" class="radio" apprentice-exam-scope>
+                    #12
+                </IgbRadio>
+                <IgbRadio Value="2" class="radio" apprentice-exam-scope>
+                    #10
+                </IgbRadio>
+                <IgbRadio Value="3" class="radio" apprentice-exam-scope>
+                    #8
+                </IgbRadio>
+                <IgbRadio Value="4" class="radio" apprentice-exam-scope>
+                    #6
+                </IgbRadio>
+                <IgbRadio Value="5" class="radio" apprentice-exam-scope>
+                    None are correct
+                </IgbRadio>
+            </IgbRadioGroup>
+            <div class="row-layout group_2">
+                <p class="typography__body-1 text_1">
+                    11.What size wire is needed for a 30A 240V circuit?
+                </p>
+            </div>
+            <IgbRadioGroup Alignment="RadioGroupAlignment.Horizontal" class="radio-group" apprentice-exam-scope>
+                <IgbRadio Value="1" class="radio" apprentice-exam-scope>
+                    #12
+                </IgbRadio>
+                <IgbRadio Value="2" class="radio" apprentice-exam-scope>
+                    #10
+                </IgbRadio>
+                <IgbRadio Value="3" class="radio" apprentice-exam-scope>
+                    #8
+                </IgbRadio>
+                <IgbRadio Value="4" class="radio" apprentice-exam-scope>
+                    #6
+                </IgbRadio>
+                <IgbRadio Value="5" class="radio" apprentice-exam-scope>
+                    None are correct
+                </IgbRadio>
+            </IgbRadioGroup>
+            <div class="row-layout group_2">
+                <p class="typography__body-1 text_1">
+                    12.Check 4 common wiring colors for a 120/240V panel?
+                </p>
+            </div>
+            <IgbCheckbox LabelPosition="CheckboxBaseLabelPosition.After" class="checkbox" apprentice-exam-scope>
+                Black
+            </IgbCheckbox>
+            <IgbCheckbox LabelPosition="CheckboxBaseLabelPosition.After" class="checkbox" apprentice-exam-scope>
+                Red
+            </IgbCheckbox>
+            <IgbCheckbox LabelPosition="CheckboxBaseLabelPosition.After" class="checkbox" apprentice-exam-scope>
+                [Some wrong color]
+            </IgbCheckbox>
+            <IgbCheckbox LabelPosition="CheckboxBaseLabelPosition.After" class="checkbox" apprentice-exam-scope>
+                [Some wrong color]
+            </IgbCheckbox>
+            <IgbCheckbox LabelPosition="CheckboxBaseLabelPosition.After" class="checkbox" apprentice-exam-scope>
+                Blue
+            </IgbCheckbox>
+            <IgbCheckbox LabelPosition="CheckboxBaseLabelPosition.After" class="checkbox" apprentice-exam-scope>
+                [Some wrong color]
+            </IgbCheckbox>
+            <IgbCheckbox LabelPosition="CheckboxBaseLabelPosition.After" class="checkbox_1" apprentice-exam-scope>
+                White
+            </IgbCheckbox>
+            <div class="row-layout group_2">
+                <p class="typography__body-1 text_1">
+                    13.List 4 common wiring colors for a 480V panel?
+                </p>
+            </div>
+            <IgbCheckbox LabelPosition="CheckboxBaseLabelPosition.After" class="checkbox" apprentice-exam-scope>
+                [Some wrong color]
+            </IgbCheckbox>
+            <IgbCheckbox LabelPosition="CheckboxBaseLabelPosition.After" class="checkbox" apprentice-exam-scope>
+                Black
+            </IgbCheckbox>
+            <IgbCheckbox LabelPosition="CheckboxBaseLabelPosition.After" class="checkbox" apprentice-exam-scope>
+                Orange
+            </IgbCheckbox>
+            <IgbCheckbox LabelPosition="CheckboxBaseLabelPosition.After" class="checkbox" apprentice-exam-scope>
+                [Some wrong color]
+            </IgbCheckbox>
+            <IgbCheckbox LabelPosition="CheckboxBaseLabelPosition.After" class="checkbox" apprentice-exam-scope>
+                Yellow
+            </IgbCheckbox>
+            <IgbCheckbox LabelPosition="CheckboxBaseLabelPosition.After" class="checkbox" apprentice-exam-scope>
+                Gray
+            </IgbCheckbox>
+            <IgbCheckbox LabelPosition="CheckboxBaseLabelPosition.After" class="checkbox_1" apprentice-exam-scope>
+                [Some wrong color]
+            </IgbCheckbox>
+            <div class="row-layout group_2">
+                <p class="typography__body-1 text_1">
+                    14.Can a neutral conductor inside a pull box be split?
+                </p>
+            </div>
+            <IgbRadioGroup Alignment="RadioGroupAlignment.Horizontal" class="radio-group" apprentice-exam-scope>
+                <IgbRadio Value="1" class="radio" apprentice-exam-scope>
+                    True
+                </IgbRadio>
+                <IgbRadio Value="2" class="radio" apprentice-exam-scope>
+                    False
+                </IgbRadio>
+            </IgbRadioGroup>
+            <div class="row-layout group_2">
+                <p class="typography__body-1 text_1">
+                    15.A circuit breaker is an safety device designed to protect against getting shocked?
+                </p>
+            </div>
+            <IgbRadioGroup Alignment="RadioGroupAlignment.Horizontal" class="radio-group" apprentice-exam-scope>
+                <IgbRadio Value="1" class="radio" apprentice-exam-scope>
+                    True
+                </IgbRadio>
+                <IgbRadio Value="2" class="radio" apprentice-exam-scope>
+                    False
+                </IgbRadio>
+            </IgbRadioGroup>
+            <div class="row-layout group_2">
+                <p class="typography__body-1 text_1">
+                    16.What is the difference between a circuit breaker and a fuse?
+                </p>
+            </div>
+            <IgbRadioGroup class="radio-group" apprentice-exam-scope>
+                <IgbRadio Value="1" class="radio" apprentice-exam-scope>
+                    A fuse can only be used once while a breaker can be used repeatedly
+                </IgbRadio>
+                <IgbRadio Value="2" class="radio" apprentice-exam-scope>
+                    A fuse can be used repeatedly while a breaker can only be used once
+                </IgbRadio>
+                <IgbRadio Value="3" class="radio" apprentice-exam-scope>
+                    Neither are correct
+                </IgbRadio>
+            </IgbRadioGroup>
+            <div class="row-layout group_2">
+                <p class="typography__body-1 text_1">
+                    17.How many current carrying conductors of a #12 wire can fit inside a 3/4" EMT conduit?
+                </p>
+            </div>
+            <IgbRadioGroup Alignment="RadioGroupAlignment.Horizontal" class="radio-group" apprentice-exam-scope>
+                <IgbRadio Value="1" class="radio" apprentice-exam-scope>
+                    6
+                </IgbRadio>
+                <IgbRadio Value="2" class="radio" apprentice-exam-scope>
+                    12
+                </IgbRadio>
+                <IgbRadio Value="3" class="radio" apprentice-exam-scope>
+                    4
+                </IgbRadio>
+                <IgbRadio Value="4" class="radio" apprentice-exam-scope>
+                    9
+                </IgbRadio>
+                <IgbRadio Value="5" class="radio" apprentice-exam-scope>
+                    None are correct
+                </IgbRadio>
+            </IgbRadioGroup>
+            <div class="row-layout group_2">
+                <p class="typography__body-1 text_1">
+                    18.[Question Needed]
+                </p>
+            </div>
+            <IgbRadioGroup Alignment="RadioGroupAlignment.Horizontal" class="radio-group" apprentice-exam-scope>
+                <IgbRadio Value="1" class="radio" apprentice-exam-scope>
+                    [Some wrong answer]
+                </IgbRadio>
+                <IgbRadio Value="2" class="radio" apprentice-exam-scope>
+                    [Correct answer]
+                </IgbRadio>
+                <IgbRadio Value="3" class="radio" apprentice-exam-scope>
+                    [Some wrong answer]
+                </IgbRadio>
+                <IgbRadio Value="4" class="radio" apprentice-exam-scope>
+                    [Some wrong answer]
+                </IgbRadio>
+                <IgbRadio Value="5" class="radio" apprentice-exam-scope>
+                    All or None are correct
+                </IgbRadio>
+            </IgbRadioGroup>
+            <div class="row-layout group_2">
+                <p class="typography__body-1 text_1">
+                    19.[Question Needed]
+                </p>
+            </div>
+            <IgbRadioGroup Alignment="RadioGroupAlignment.Horizontal" class="radio-group" apprentice-exam-scope>
+                <IgbRadio Value="1" class="radio" apprentice-exam-scope>
+                    [Some wrong answer]
+                </IgbRadio>
+                <IgbRadio Value="2" class="radio" apprentice-exam-scope>
+                    [Some wrong answer]
+                </IgbRadio>
+                <IgbRadio Value="3" class="radio" apprentice-exam-scope>
+                    [Some wrong answer]
+                </IgbRadio>
+                <IgbRadio Value="4" class="radio" apprentice-exam-scope>
+                    [Correct answer]
+                </IgbRadio>
+                <IgbRadio Value="5" class="radio" apprentice-exam-scope>
+                    All or None are correct
+                </IgbRadio>
+            </IgbRadioGroup>
+            <div class="row-layout group_2">
+                <p class="typography__body-1 text_1">
+                    20.[Question Needed]
+                </p>
+            </div>
+            <IgbRadioGroup Alignment="RadioGroupAlignment.Horizontal" class="radio-group" apprentice-exam-scope>
+                <IgbRadio Value="1" class="radio" apprentice-exam-scope>
+                    [Correct answer]
+                </IgbRadio>
+                <IgbRadio Value="2" class="radio" apprentice-exam-scope>
+                    [Some wrong answer]
+                </IgbRadio>
+                <IgbRadio Value="3" class="radio" apprentice-exam-scope>
+                    [Some wrong answer]
+                </IgbRadio>
+                <IgbRadio Value="4" class="radio" apprentice-exam-scope>
+                    [Some wrong answer]
+                </IgbRadio>
+                <IgbRadio Value="5" class="radio" apprentice-exam-scope>
+                    All or None are correct
+                </IgbRadio>
+            </IgbRadioGroup>
+            <IgbButton @onclick="@(e => Navigate("in-app-examination/journeyman-exam"))" class="button" apprentice-exam-scope>
+                Submit
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+        </div>
+    </div>
+</div>
+
+@code {
+    private void Navigate(string path)
+    {
+        NavigationManager.NavigateTo(path);
+    }
+}

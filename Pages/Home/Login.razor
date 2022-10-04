@@ -1,0 +1,38 @@
+@page "/login"
+@inject NavigationManager NavigationManager
+
+<div class="row-layout login-container">
+    <div class="column-layout form">
+        <div class="column-layout group">
+            <div class="column-layout group_1">
+                <h4 class="content">
+                    Login
+                </h4>
+                <p class="typography__body-2 content">
+                    Please, login so you can access all applications features
+                </p>
+            </div>
+            <IgbInput Label="Username" Placeholder="wie.username" Outlined="true" class="input" login-scope></IgbInput>
+            <IgbInput DisplayType="InputType.Password" Label="Password" Placeholder="Min 8 characters" Outlined="true" class="input" login-scope></IgbInput>
+            <div class="row-layout group_2">
+                <IgbCheckbox LabelPosition="CheckboxBaseLabelPosition.After" Checked="true" Indeterminate="false" class="checkbox" login-scope>
+                    Remember me
+                </IgbCheckbox>
+                <a href class="typography__body-2 hyperlink" @onclick="@(e => Navigate(""))">
+                    Forgot password?
+                </a>
+            </div>
+            <IgbButton class="button" login-scope>
+                log in
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+        </div>
+    </div>
+</div>
+
+@code {
+    private void Navigate(string path)
+    {
+        NavigationManager.NavigateTo(path);
+    }
+}

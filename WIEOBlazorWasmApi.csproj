@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IgniteUI.Blazor" Version="22.1.41" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.0" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Shared/Home.razor.css" CssScope="home-scope" />
+    <None Update="Pages/Home/ResetPassword.razor.css" CssScope="reset-password-scope" />
+    <None Update="Pages/Home/Login.razor.css" CssScope="login-scope" />
+    <None Update="Pages/Home/CreateLogin.razor.css" CssScope="create-login-scope" />
+    <None Update="Pages/Home/SetNewPassword.razor.css" CssScope="set-new-password-scope" />
+    <None Update="Shared/InAppExamination.razor.css" CssScope="in-app-examination-scope" />
+    <None Update="Pages/In-App-Examination/ApprenticeExam.razor.css" CssScope="apprentice-exam-scope" />
+    <None Update="Pages/In-App-Examination/JourneymanExam.razor.css" CssScope="journeyman-exam-scope" />
+    <None Update="Pages/In-App-Examination/ForemanExam.razor.css" CssScope="foreman-exam-scope" />
+    <None Update="Pages/In-App-Examination/SupervisorExam.razor.css" CssScope="supervisor-exam-scope" />
+    <None Update="Pages/In-App-Examination/SuperintendentExam.razor.css" CssScope="superintendent-exam-scope" />
+    <None Update="Pages/In-App-Examination/MasterExam.razor.css" CssScope="master-exam-scope" />
+  </ItemGroup>
+
+</Project>
