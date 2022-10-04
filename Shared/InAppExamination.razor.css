@@ -33,6 +33,7 @@
     min-width: 50px;
 }
 .footer {
+    background-color: hsla(var(--igc-gray-100));
     justify-content: center;
     align-items: center;
     align-content: flex-start;
@@ -66,7 +67,7 @@
     height: max-content;
     min-width: min-content;
 }
-.home-views-container {
+.view-container {
     position: relative;
     min-width: 0;
     min-height: 0;
